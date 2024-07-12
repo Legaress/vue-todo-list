@@ -1,7 +1,11 @@
 <script setup lang="ts">
+  import AppHeader from './components/AppHeader.vue';
+  import TodoList from './components/TodoList.vue'
 </script>
 
 <template>
+  <AppHeader />
+  <TodoList />
 </template>
 
 <style scoped>
@@ -16,7 +20,7 @@ header {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    display: block;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
