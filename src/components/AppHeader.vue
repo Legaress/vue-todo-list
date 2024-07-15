@@ -1,32 +1,41 @@
 <template>
-	<header>
-		<h1><span class="icon" aria-hidden="true">✅</span> To do</h1>
-		<p>Building Real-world Web Applications with Vue.js 3</p>
-	</header>
+  <header class="header">
+    <h1 class="title">
+      <span class="icon" aria-hidden="true">✅</span>
+      <span class="title-text">To Do</span>
+    </h1>
+    <p class="subtitle">Building Real-world Web Applications with Vue.js 3</p>
+  </header>
 </template>
 
 <style scoped>
-	header {
-		border-bottom: #333 1px solid;
-		background-color: #fff;
-	}
+.header {
+  border-bottom: #333 1px solid;
+  background-color: #fafafa;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 0.5px 0;
+}
 
-	header::after {
-		content: "";
-		display: block;
-		height: 1px;
-		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-	}
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-	h1 {
-		display: block;
-		font-size: 2rem;
-	}
+.icon {
+  font-size: 2rem;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
 
-	h1 .icon {
-		font-size: 1rem;
-		vertical-align: middle;
-		display: inline;
-	}
+.title-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.subtitle {
+  font-size: 1.1rem;
+  color: #444;
+}
 </style>

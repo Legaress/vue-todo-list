@@ -1,14 +1,16 @@
 <script setup lang="ts">
-  import AppHeader from './components/AppHeader.vue';
-  import TodoList from './components/TodoList.vue'
+import AppHeader from './components/AppHeader.vue';
+import TodoList from './components/TodoList.vue';
 </script>
 
 <template>
-  <AppHeader />
-  <TodoList />
+  <div>
+    <AppHeader />
+    <TodoList />
+  </div>
 </template>
 
-<style scoped>
+<style>
 header {
   line-height: 1.5;
 }
